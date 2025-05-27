@@ -17,6 +17,36 @@
     </nav>
     </header>
 
+    <div class="form-container">
+    <h2>Contactez notre association</h2>
+    <p>Ensemble, œuvrons pour un meilleur accès à l'eau.</p>
+
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="lastname">Nom :</label>
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname" name="firstname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Pourquoi souhaitez-vous nous rejoindre ?</label>
+      </div>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div id="confirmation" class="confirmation"></div>
+  </div>
     
     <footer>
     <p>©️2025 J.Casamian E.Abouzi</p>
