@@ -9,3 +9,15 @@ footer{
 html{
     background-color: #e6f4f1;
 }
+
+figure{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
