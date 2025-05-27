@@ -55,39 +55,6 @@ h1{
 }
 .form-group {
       margin-bottom: 15px;
-<<<<<<< Updated upstream
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background-color: #0077b6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005f8a;
-}
-
-.confirmation {
-    color: green;
-    margin-top: 20px;
-}
-=======
     }
     label {
       display: block;
@@ -115,4 +82,3 @@ button:hover {
       color: #00a9c3;
       margin-top: 20px;
     }
->>>>>>> Stashed changes
