@@ -3,13 +3,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const confirmation = document.getElementById("confirmation");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Empêche l'envoi réel du formulaire
+    e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+    const lastname = document.getElementById("lastname").value.trim();
+    const firstname = document.getElementById("firstname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    confirmation.textContent = `Merci ${name}, nous vous contacterons bientôt à l'adresse ${email}.`;
+    // Affiche une confirmation avec animation
+    confirmation.textContent = `Merci ${firstname} ${lastname}, nous vous contacterons bientôt à l'adresse ${email}.`;
+    confirmation.classList.add("show");
+    alert(`Merci ${firstname} ${lastname}, nous vous contacterons bientôt à l'adresse ${email}.`);
 
-    form.reset(); // Réinitialise le formulaire
+    // Réinitialise le formulaire après une courte pause
+    setTimeout(() => {
+      form.reset();
+    }, 500);
+
+    // Optionnel : faire disparaître le message après quelques secondes
+    setTimeout(() => {
+      confirmation.classList.remove("show");
+    }, 5000);
   });
 });
