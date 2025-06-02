@@ -10,12 +10,28 @@
 </head>
 <body>
     
-    <header>
+<header>
     <nav>
-        <a href="Acceuil.html"><img src="../img/NMTlogo.png" width="50"></a>
-        <a href="SitActu.html">Situation Actuelle</a>
-        <a href="EngHum.html">Engagement humanitaire</a>
-        <a href="Agir.html">Agir</a>
+        <a href="Acceuil.html"><img src="../img/NMTlogo.png" width="70"></a>
+        <div class="dropdown">
+            <button class="dropdown-btn"><a href="SitActu.html">Situation Actuelle</a></button>
+            <div class="dropdown-content">
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn"><a href="EngHum.html">Engagement humanitaire</a></button>
+            <div class="dropdown-content">
+                <a href="Projets/Togo.html"># Togo</a>
+                <a href="Projets/Cameroun.html"># Cameroun</a>
+                <a href="Projets/Senegal.html"># Sénégal</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn"><a href="Agir.html">Agir</a></button>
+            <div class="dropdown-content">
+            </div>
+        </div>
+
     </nav>
     </header>
 
@@ -44,7 +60,7 @@
       </div>
       <textarea id="message" name="message" rows="4" required></textarea>
 
-      <button type="submit">Envoyer</button>
+      <button class="form" type="submit">Envoyer</button>
     </form>
 
     <div id="confirmation" class="confirmation"></div>
